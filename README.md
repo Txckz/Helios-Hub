@@ -571,7 +571,7 @@ function lib:MainWindow(text)
 					TweenService:Create(
 						toggle,
 						TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(71, 71, 71)}
+						{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
 					):Play()
 				end
 			)
@@ -581,7 +581,7 @@ function lib:MainWindow(text)
 					TweenService:Create(
 						toggle,
 						TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(61, 61, 61)}
+						{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
 					):Play()
 				end
 			)
@@ -751,7 +751,7 @@ function lib:MainWindow(text)
 			confirmbutton.Position = UDim2.new(0.499422163, 0, 0.90464288, 0)
 			confirmbutton.Size = UDim2.new(0, 150, 0, 19)
 			confirmbutton.AutoButtonColor = false
-			confirmbutton.Font = Enum.Font.Gotham
+			confirmbutton.Font = Enum.Font.Roboto
 			confirmbutton.Text = "Confirm"
 			confirmbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
 			confirmbutton.TextSize = 14.000
@@ -771,7 +771,7 @@ function lib:MainWindow(text)
 			rainbowtoggle.Position = UDim2.new(0.495000005, 0, 0.755999982, 0)
 			rainbowtoggle.Size = UDim2.new(0, 152, 0, 25)
 			rainbowtoggle.AutoButtonColor = false
-			rainbowtoggle.Font = Enum.Font.Gotham
+			rainbowtoggle.Font = Enum.Font.Roboto
 			rainbowtoggle.Text = ""
 			rainbowtoggle.TextColor3 = Color3.fromRGB(255, 255, 255)
 			rainbowtoggle.TextSize = 14.000
@@ -786,7 +786,7 @@ function lib:MainWindow(text)
 			title.BackgroundTransparency = 1.000
 			title.Position = UDim2.new(0.0238095261, 0, 0.178571433, 0)
 			title.Size = UDim2.new(0, 55, 0, 17)
-			title.Font = Enum.Font.Gotham
+			title.Font = Enum.Font.Roboto
 			title.Text = "Rainbow"
 			title.TextColor3 = Color3.fromRGB(255, 255, 255)
 			title.TextSize = 14.000
@@ -1073,7 +1073,7 @@ function lib:MainWindow(text)
 			valueframe.Name = "valueframe"
 			valueframe.Parent = slider
 			valueframe.AnchorPoint = Vector2.new(1, 0.5)
-			valueframe.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
+			valueframe.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 			valueframe.BorderSizePixel = 0
 			valueframe.Position = UDim2.new(0.973809361, 0, 0.363507211, 0)
 			valueframe.Size = UDim2.new(0, 44, 0, 16)
@@ -1146,7 +1146,7 @@ function lib:MainWindow(text)
 			label.Position = UDim2.new(0.503571451, 0, 0.535714269, 0)
 			label.Size = UDim2.new(0, 420, 0, 28)
 			label.AutoButtonColor = false
-			label.Font = Enum.Font.Gotham
+			label.Font = Enum.Font.Roboto
 			label.TextColor3 = Color3.fromRGB(255, 255, 255)
 			label.TextSize = 14.000
 			label.Text = text
@@ -1195,7 +1195,7 @@ function lib:MainWindow(text)
 			textbox.Position = UDim2.new(0.516391993, 0, 0.569233835, 0)
 			textbox.Size = UDim2.new(0, 420, 0, 28)
 			textbox.AutoButtonColor = false
-			textbox.Font = Enum.Font.Gotham
+			textbox.Font = Enum.Font.Roboto
 			textbox.Text = ""
 			textbox.TextColor3 = Color3.fromRGB(255, 255, 255)
 			textbox.TextSize = 14.000
@@ -1268,7 +1268,7 @@ function lib:MainWindow(text)
 			dropdown.Position = UDim2.new(0.503571451, 0, 0.535714269, 0)
 			dropdown.Size = UDim2.new(0, 420, 0, 28)
 			dropdown.AutoButtonColor = false
-			dropdown.Font = Enum.Font.Gotham
+			dropdown.Font = Enum.Font.Roboto
 			dropdown.Text = ""
 			dropdown.TextColor3 = Color3.fromRGB(255, 255, 255)
 			dropdown.TextSize = 14.000
@@ -1312,7 +1312,7 @@ function lib:MainWindow(text)
 			dropdownframe.Position = UDim2.new(0.491803288, 0, 0.744318187, 0)
 			dropdownframe.Size = UDim2.new(0, 420, 0, 95)
 			dropdownframe.AutoButtonColor = false
-			dropdownframe.Font = Enum.Font.Gotham
+			dropdownframe.Font = Enum.Font.Roboto
 			dropdownframe.Text = ""
 			dropdownframe.TextColor3 = Color3.fromRGB(255, 255, 255)
 			dropdownframe.TextSize = 14.000
@@ -1400,7 +1400,7 @@ function lib:MainWindow(text)
 					TweenService:Create(
 						dropdown,
 						TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(71, 71, 71)}
+						{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
 					):Play()
 				end
 			)
@@ -1410,7 +1410,7 @@ function lib:MainWindow(text)
 					TweenService:Create(
 						dropdown,
 						TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(61, 61, 61)}
+						{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
 					):Play()
 				end
 			)
