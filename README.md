@@ -74,7 +74,7 @@ local function MakeDraggable(topbarobject, object)
 end
 
 local helioslib = Instance.new("ScreenGui")
-helioslib.Name = "helioslib"
+helioslib.Name = "Chaos V5"
 helioslib.Parent = game.CoreGui
 helioslib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 local usi = game:GetService("UserInputService")
