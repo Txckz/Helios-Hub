@@ -171,7 +171,7 @@ function lib:notification(textt)
 
 	container.Name = "container"
 	container.Parent = notificationframe
-	container.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
+	container.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	container.Position = UDim2.new(0.031752713, 0, 0.228634387, 0)
 	container.Size = UDim2.new(0, 383, 0, 142)
 
@@ -182,7 +182,7 @@ function lib:notification(textt)
 	okay.Name = "okay"
 	okay.Parent = container
 	okay.AnchorPoint = Vector2.new(0.5, 0.5)
-	okay.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+	okay.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	okay.BackgroundTransparency = -0.050
 	okay.Position = UDim2.new(0.499596477, 0, 0.844715297, 0)
 	okay.Size = UDim2.new(0, 368, 0, 31)
