@@ -521,7 +521,7 @@ function lib:MainWindow(text)
 			toggle.Position = UDim2.new(0.503571451, 0, 0.535714269, 0)
 			toggle.Size = UDim2.new(0, 420, 0, 28)
 			toggle.AutoButtonColor = false
-			toggle.Font = Enum.Font.Gotham
+			toggle.Font = Enum.Font.Roboto
 			toggle.Text = ""
 			toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
 			toggle.TextSize = 14.000
@@ -536,7 +536,7 @@ function lib:MainWindow(text)
 			title.BackgroundTransparency = 1.000
 			title.Position = UDim2.new(0.0238095261, 0, 0.178571433, 0)
 			title.Size = UDim2.new(0, 55, 0, 17)
-			title.Font = Enum.Font.Gotham
+			title.Font = Enum.Font.Roboto
 			title.Text = text
 			title.TextColor3 = Color3.fromRGB(255, 255, 255)
 			title.TextSize = 14.000
@@ -545,7 +545,7 @@ function lib:MainWindow(text)
 			box.Name = "box"
 			box.Parent = toggle
 			box.AnchorPoint = Vector2.new(1, 0.5)
-			box.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
+			box.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 			box.BorderSizePixel = 0
 			box.Position = UDim2.new(1, -5, 0.5, 0)
 			box.Size = UDim2.new(0, 36, 1, -8)
@@ -1142,7 +1142,7 @@ function lib:MainWindow(text)
 			label.Name = "button"
 			label.Parent = scrollframe
 			label.AnchorPoint = Vector2.new(0.5, 0.5)
-			label.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+			label.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
 			label.Position = UDim2.new(0.503571451, 0, 0.535714269, 0)
 			label.Size = UDim2.new(0, 420, 0, 28)
 			label.AutoButtonColor = false
@@ -1210,7 +1210,7 @@ function lib:MainWindow(text)
 			title.BackgroundTransparency = 1.000
 			title.Position = UDim2.new(0.0238095261, 0, 0.178571433, 0)
 			title.Size = UDim2.new(0, 55, 0, 17)
-			title.Font = Enum.Font.Gotham
+			title.Font = Enum.Font.Roboto
 			title.Text = text
 			title.TextColor3 = Color3.fromRGB(255, 255, 255)
 			title.TextSize = 14.000
@@ -1283,7 +1283,7 @@ function lib:MainWindow(text)
 			title.BackgroundTransparency = 1.000
 			title.Position = UDim2.new(0.0238095261, 0, 0.178571433, 0)
 			title.Size = UDim2.new(0, 55, 0, 17)
-			title.Font = Enum.Font.Gotham
+			title.Font = Enum.Font.Roboto
 			title.Text = name
 			title.TextColor3 = Color3.fromRGB(255, 255, 255)
 			title.TextSize = 14.000
