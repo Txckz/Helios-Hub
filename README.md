@@ -81,7 +81,7 @@ local usi = game:GetService("UserInputService")
 local uitoggled = false
 usi.InputBegan:Connect(
 	function(io, p)
-		if io.KeyCode == Enum.KeyCode.RightShift then
+		if io.KeyCode == Enum.KeyCode.F6 then
 			if uitoggled == false then
 				helioslib.Enabled = false
 				uitoggled = true
@@ -151,7 +151,7 @@ function lib:notification(textt)
 	Glow.Size = UDim2.new(1, 30, 1, 30)
 	Glow.ZIndex = 0
 	Glow.Image = "rbxassetid://4996891970"
-	Glow.ImageColor3 = Color3.fromRGB(15, 15, 15)
+	Glow.ImageColor3 = Color3.fromRGB(255, 0, 0)
 	Glow.ScaleType = Enum.ScaleType.Slice
 	Glow.SliceCenter = Rect.new(20, 20, 280, 280)
 
@@ -215,7 +215,7 @@ function lib:notification(textt)
 			TweenService:Create(
 				okay,
 				TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(71, 71, 71)}
+				{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
 			):Play()
 		end
 	)
@@ -225,7 +225,7 @@ function lib:notification(textt)
 			TweenService:Create(
 				okay,
 				TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(61, 61, 61)}
+				{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
 			):Play()
 		end
 	)
