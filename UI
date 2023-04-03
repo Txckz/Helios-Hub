@@ -282,7 +282,7 @@ function lib:MainWindow(text)
 	title.Position = UDim2.new(0.172839507, 0, 0.0558659211, 0)
 	title.Size = UDim2.new(0, 106, 0, 28)
 	title.Font = Enum.Font.Roboto
-	title.Text = "Helios Hub"
+	title.Text = "Chaos V5.O.1"
 	title.TextColor3 = Color3.fromRGB(255, 255, 255)
 	title.TextSize = 18.000
 	title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -361,8 +361,8 @@ function lib:MainWindow(text)
 
 	dragframe.Name = "dragframe"
 	dragframe.Parent = mainframe
-	dragframe.AnchorPoint = Vector2.new(0.5, 0.5)
-	dragframe.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+	dragframe.AnchorPoint = Vector2.new(0.6, 0.6)
+	dragframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	dragframe.BackgroundTransparency = 1.000
 	dragframe.Position = UDim2.new(0.629807711, 0, 0.0893854722, 0)
 	dragframe.Size = UDim2.new(0, 448, 0, 48)
@@ -412,7 +412,7 @@ function lib:MainWindow(text)
 
 		container.Name = "container"
 		container.Parent = containers
-		container.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
+		container.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		container.Position = UDim2.new(0.273131847, 0, 0.175236449, 0)
 		container.Size = UDim2.new(0, 443, 0, 283)
 		container.Visible = false
@@ -454,7 +454,7 @@ function lib:MainWindow(text)
 			button.Name = "button"
 			button.Parent = scrollframe
 			button.AnchorPoint = Vector2.new(0.5, 0.5)
-			button.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+			button.BackgroundColor3 = Color3.fromRGB(5, 5, 5)
 			button.Position = UDim2.new(0.503571451, 0, 0.535714269, 0)
 			button.Size = UDim2.new(0, 420, 0, 28)
 			button.AutoButtonColor = false
