@@ -74,14 +74,14 @@ local function MakeDraggable(topbarobject, object)
 end
 
 local helioslib = Instance.new("ScreenGui")
-helioslib.Name = "Chaos V5"
+helioslib.Name = "helioslib"
 helioslib.Parent = game.CoreGui
 helioslib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 local usi = game:GetService("UserInputService")
 local uitoggled = false
 usi.InputBegan:Connect(
 	function(io, p)
-		if io.KeyCode == Enum.KeyCode.F6 then
+		if io.KeyCode == Enum.KeyCode.RightShift then
 			if uitoggled == false then
 				helioslib.Enabled = false
 				uitoggled = true
@@ -171,7 +171,7 @@ function lib:notification(textt)
 
 	container.Name = "container"
 	container.Parent = notificationframe
-	container.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	container.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
 	container.Position = UDim2.new(0.031752713, 0, 0.228634387, 0)
 	container.Size = UDim2.new(0, 383, 0, 142)
 
@@ -182,7 +182,7 @@ function lib:notification(textt)
 	okay.Name = "okay"
 	okay.Parent = container
 	okay.AnchorPoint = Vector2.new(0.5, 0.5)
-	okay.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	okay.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
 	okay.BackgroundTransparency = -0.050
 	okay.Position = UDim2.new(0.499596477, 0, 0.844715297, 0)
 	okay.Size = UDim2.new(0, 368, 0, 31)
@@ -215,7 +215,7 @@ function lib:notification(textt)
 			TweenService:Create(
 				okay,
 				TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
+				{BackgroundColor3 = Color3.fromRGB(71, 71, 71)}
 			):Play()
 		end
 	)
@@ -225,7 +225,7 @@ function lib:notification(textt)
 			TweenService:Create(
 				okay,
 				TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
+				{BackgroundColor3 = Color3.fromRGB(61, 61, 61)}
 			):Play()
 		end
 	)
@@ -257,7 +257,7 @@ function lib:MainWindow(text)
 	mainframe.Name = "mainframe"
 	mainframe.Parent = helioslib
 	mainframe.AnchorPoint = Vector2.new(0.5, 0.5)
-	mainframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- 45, 45, 45
+	mainframe.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 	mainframe.Position = UDim2.new(0.5, 0, 0.5, 0)
 	mainframe.Size = UDim2.new(0, 624, 0, 358)
 
@@ -267,7 +267,7 @@ function lib:MainWindow(text)
 
 	leftframe.Name = "leftframe"
 	leftframe.Parent = mainframe
-	leftframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	leftframe.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 	leftframe.Position = UDim2.new(-0.000906724192, 0, -0.000741202093, 0)
 	leftframe.Size = UDim2.new(0, 162, 0, 358)
 
@@ -281,8 +281,8 @@ function lib:MainWindow(text)
 	title.BackgroundTransparency = 1.000
 	title.Position = UDim2.new(0.172839507, 0, 0.0558659211, 0)
 	title.Size = UDim2.new(0, 106, 0, 28)
-	title.Font = Enum.Font.Roboto
-	title.Text = "Chaos V5.O.1"
+	title.Font = Enum.Font.Jura
+	title.Text = "Chaos V5.0.1"
 	title.TextColor3 = Color3.fromRGB(255, 255, 255)
 	title.TextSize = 18.000
 	title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -293,7 +293,7 @@ function lib:MainWindow(text)
 	gamename.BackgroundTransparency = 1.000
 	gamename.Position = UDim2.new(0.172839507, 0, 0.0977653712, 0)
 	gamename.Size = UDim2.new(0, 106, 0, 28)
-	gamename.Font = Enum.Font.Gotham
+	gamename.Font = Enum.Font.Roboto
 	gamename.Text = text
 	gamename.TextColor3 = Color3.fromRGB(255, 255, 255)
 	gamename.TextSize = 12.000
@@ -301,7 +301,7 @@ function lib:MainWindow(text)
 
 	tabholder.Name = "tabholder"
 	tabholder.Parent = leftframe
-	tabholder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	tabholder.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 	tabholder.Position = UDim2.new(0.0608215332, 0, 0.175977647, 0)
 	tabholder.Size = UDim2.new(0, 141, 0, 283)
 
@@ -325,7 +325,7 @@ function lib:MainWindow(text)
 	currenttab.BackgroundTransparency = 1.000
 	currenttab.Position = UDim2.new(1.09876537, 0, 0.0558659211, 0)
 	currenttab.Size = UDim2.new(0, 106, 0, 28)
-	currenttab.Font = Enum.Font.GothamSemibold
+	currenttab.Font = Enum.Font.Roboto
 	currenttab.Text = "Main"
 	currenttab.TextColor3 = Color3.fromRGB(255, 255, 255)
 	currenttab.TextSize = 18.000
@@ -361,8 +361,8 @@ function lib:MainWindow(text)
 
 	dragframe.Name = "dragframe"
 	dragframe.Parent = mainframe
-	dragframe.AnchorPoint = Vector2.new(0.6, 0.6)
-	dragframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	dragframe.AnchorPoint = Vector2.new(0.5, 0.5)
+	dragframe.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 	dragframe.BackgroundTransparency = 1.000
 	dragframe.Position = UDim2.new(0.629807711, 0, 0.0893854722, 0)
 	dragframe.Size = UDim2.new(0, 448, 0, 48)
@@ -385,7 +385,7 @@ function lib:MainWindow(text)
 		tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		tab.BackgroundTransparency = 1.000
 		tab.Size = UDim2.new(0, 141, 0, 22)
-		tab.Font = Enum.Font.Gotham
+		tab.Font = Enum.Font.Roboto
 		tab.Text = title
 		tab.TextColor3 = Color3.fromRGB(255, 255, 255)
 		tab.TextSize = 14.000
@@ -412,7 +412,7 @@ function lib:MainWindow(text)
 
 		container.Name = "container"
 		container.Parent = containers
-		container.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		container.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
 		container.Position = UDim2.new(0.273131847, 0, 0.175236449, 0)
 		container.Size = UDim2.new(0, 443, 0, 283)
 		container.Visible = false
@@ -454,7 +454,7 @@ function lib:MainWindow(text)
 			button.Name = "button"
 			button.Parent = scrollframe
 			button.AnchorPoint = Vector2.new(0.5, 0.5)
-			button.BackgroundColor3 = Color3.fromRGB(5, 5, 5)
+			button.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
 			button.Position = UDim2.new(0.503571451, 0, 0.535714269, 0)
 			button.Size = UDim2.new(0, 420, 0, 28)
 			button.AutoButtonColor = false
@@ -521,7 +521,7 @@ function lib:MainWindow(text)
 			toggle.Position = UDim2.new(0.503571451, 0, 0.535714269, 0)
 			toggle.Size = UDim2.new(0, 420, 0, 28)
 			toggle.AutoButtonColor = false
-			toggle.Font = Enum.Font.Roboto
+			toggle.Font = Enum.Font.Gotham
 			toggle.Text = ""
 			toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
 			toggle.TextSize = 14.000
@@ -536,7 +536,7 @@ function lib:MainWindow(text)
 			title.BackgroundTransparency = 1.000
 			title.Position = UDim2.new(0.0238095261, 0, 0.178571433, 0)
 			title.Size = UDim2.new(0, 55, 0, 17)
-			title.Font = Enum.Font.Roboto
+			title.Font = Enum.Font.Gotham
 			title.Text = text
 			title.TextColor3 = Color3.fromRGB(255, 255, 255)
 			title.TextSize = 14.000
@@ -545,7 +545,7 @@ function lib:MainWindow(text)
 			box.Name = "box"
 			box.Parent = toggle
 			box.AnchorPoint = Vector2.new(1, 0.5)
-			box.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+			box.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
 			box.BorderSizePixel = 0
 			box.Position = UDim2.new(1, -5, 0.5, 0)
 			box.Size = UDim2.new(0, 36, 1, -8)
@@ -571,7 +571,7 @@ function lib:MainWindow(text)
 					TweenService:Create(
 						toggle,
 						TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
+						{BackgroundColor3 = Color3.fromRGB(71, 71, 71)}
 					):Play()
 				end
 			)
@@ -581,7 +581,7 @@ function lib:MainWindow(text)
 					TweenService:Create(
 						toggle,
 						TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
+						{BackgroundColor3 = Color3.fromRGB(61, 61, 61)}
 					):Play()
 				end
 			)
@@ -751,7 +751,7 @@ function lib:MainWindow(text)
 			confirmbutton.Position = UDim2.new(0.499422163, 0, 0.90464288, 0)
 			confirmbutton.Size = UDim2.new(0, 150, 0, 19)
 			confirmbutton.AutoButtonColor = false
-			confirmbutton.Font = Enum.Font.Roboto
+			confirmbutton.Font = Enum.Font.Gotham
 			confirmbutton.Text = "Confirm"
 			confirmbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
 			confirmbutton.TextSize = 14.000
@@ -771,7 +771,7 @@ function lib:MainWindow(text)
 			rainbowtoggle.Position = UDim2.new(0.495000005, 0, 0.755999982, 0)
 			rainbowtoggle.Size = UDim2.new(0, 152, 0, 25)
 			rainbowtoggle.AutoButtonColor = false
-			rainbowtoggle.Font = Enum.Font.Roboto
+			rainbowtoggle.Font = Enum.Font.Gotham
 			rainbowtoggle.Text = ""
 			rainbowtoggle.TextColor3 = Color3.fromRGB(255, 255, 255)
 			rainbowtoggle.TextSize = 14.000
@@ -786,7 +786,7 @@ function lib:MainWindow(text)
 			title.BackgroundTransparency = 1.000
 			title.Position = UDim2.new(0.0238095261, 0, 0.178571433, 0)
 			title.Size = UDim2.new(0, 55, 0, 17)
-			title.Font = Enum.Font.Roboto
+			title.Font = Enum.Font.Gotham
 			title.Text = "Rainbow"
 			title.TextColor3 = Color3.fromRGB(255, 255, 255)
 			title.TextSize = 14.000
@@ -1073,7 +1073,7 @@ function lib:MainWindow(text)
 			valueframe.Name = "valueframe"
 			valueframe.Parent = slider
 			valueframe.AnchorPoint = Vector2.new(1, 0.5)
-			valueframe.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+			valueframe.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
 			valueframe.BorderSizePixel = 0
 			valueframe.Position = UDim2.new(0.973809361, 0, 0.363507211, 0)
 			valueframe.Size = UDim2.new(0, 44, 0, 16)
@@ -1142,11 +1142,11 @@ function lib:MainWindow(text)
 			label.Name = "button"
 			label.Parent = scrollframe
 			label.AnchorPoint = Vector2.new(0.5, 0.5)
-			label.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+			label.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
 			label.Position = UDim2.new(0.503571451, 0, 0.535714269, 0)
 			label.Size = UDim2.new(0, 420, 0, 28)
 			label.AutoButtonColor = false
-			label.Font = Enum.Font.Roboto
+			label.Font = Enum.Font.Gotham
 			label.TextColor3 = Color3.fromRGB(255, 255, 255)
 			label.TextSize = 14.000
 			label.Text = text
@@ -1195,7 +1195,7 @@ function lib:MainWindow(text)
 			textbox.Position = UDim2.new(0.516391993, 0, 0.569233835, 0)
 			textbox.Size = UDim2.new(0, 420, 0, 28)
 			textbox.AutoButtonColor = false
-			textbox.Font = Enum.Font.Roboto
+			textbox.Font = Enum.Font.Gotham
 			textbox.Text = ""
 			textbox.TextColor3 = Color3.fromRGB(255, 255, 255)
 			textbox.TextSize = 14.000
@@ -1210,7 +1210,7 @@ function lib:MainWindow(text)
 			title.BackgroundTransparency = 1.000
 			title.Position = UDim2.new(0.0238095261, 0, 0.178571433, 0)
 			title.Size = UDim2.new(0, 55, 0, 17)
-			title.Font = Enum.Font.Roboto
+			title.Font = Enum.Font.Gotham
 			title.Text = text
 			title.TextColor3 = Color3.fromRGB(255, 255, 255)
 			title.TextSize = 14.000
@@ -1268,7 +1268,7 @@ function lib:MainWindow(text)
 			dropdown.Position = UDim2.new(0.503571451, 0, 0.535714269, 0)
 			dropdown.Size = UDim2.new(0, 420, 0, 28)
 			dropdown.AutoButtonColor = false
-			dropdown.Font = Enum.Font.Roboto
+			dropdown.Font = Enum.Font.Gotham
 			dropdown.Text = ""
 			dropdown.TextColor3 = Color3.fromRGB(255, 255, 255)
 			dropdown.TextSize = 14.000
@@ -1283,7 +1283,7 @@ function lib:MainWindow(text)
 			title.BackgroundTransparency = 1.000
 			title.Position = UDim2.new(0.0238095261, 0, 0.178571433, 0)
 			title.Size = UDim2.new(0, 55, 0, 17)
-			title.Font = Enum.Font.Roboto
+			title.Font = Enum.Font.Gotham
 			title.Text = name
 			title.TextColor3 = Color3.fromRGB(255, 255, 255)
 			title.TextSize = 14.000
@@ -1312,7 +1312,7 @@ function lib:MainWindow(text)
 			dropdownframe.Position = UDim2.new(0.491803288, 0, 0.744318187, 0)
 			dropdownframe.Size = UDim2.new(0, 420, 0, 95)
 			dropdownframe.AutoButtonColor = false
-			dropdownframe.Font = Enum.Font.Roboto
+			dropdownframe.Font = Enum.Font.Gotham
 			dropdownframe.Text = ""
 			dropdownframe.TextColor3 = Color3.fromRGB(255, 255, 255)
 			dropdownframe.TextSize = 14.000
@@ -1400,7 +1400,7 @@ function lib:MainWindow(text)
 					TweenService:Create(
 						dropdown,
 						TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
+						{BackgroundColor3 = Color3.fromRGB(71, 71, 71)}
 					):Play()
 				end
 			)
@@ -1410,7 +1410,7 @@ function lib:MainWindow(text)
 					TweenService:Create(
 						dropdown,
 						TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
+						{BackgroundColor3 = Color3.fromRGB(61, 61, 61)}
 					):Play()
 				end
 			)
