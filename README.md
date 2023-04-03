@@ -267,7 +267,7 @@ function lib:MainWindow(text)
 
 	leftframe.Name = "leftframe"
 	leftframe.Parent = mainframe
-	leftframe.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+	leftframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	leftframe.Position = UDim2.new(-0.000906724192, 0, -0.000741202093, 0)
 	leftframe.Size = UDim2.new(0, 162, 0, 358)
 
@@ -281,7 +281,7 @@ function lib:MainWindow(text)
 	title.BackgroundTransparency = 1.000
 	title.Position = UDim2.new(0.172839507, 0, 0.0558659211, 0)
 	title.Size = UDim2.new(0, 106, 0, 28)
-	title.Font = Enum.Font.GothamSemibold
+	title.Font = Enum.Font.Roboto
 	title.Text = "Helios Hub"
 	title.TextColor3 = Color3.fromRGB(255, 255, 255)
 	title.TextSize = 18.000
@@ -301,7 +301,7 @@ function lib:MainWindow(text)
 
 	tabholder.Name = "tabholder"
 	tabholder.Parent = leftframe
-	tabholder.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+	tabholder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	tabholder.Position = UDim2.new(0.0608215332, 0, 0.175977647, 0)
 	tabholder.Size = UDim2.new(0, 141, 0, 283)
 
