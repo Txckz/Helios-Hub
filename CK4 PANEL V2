@@ -159,7 +159,7 @@ tab:button({
         local sp = Instance.new('SelectionBox',n_plr.Character.Torso)
         sp.Name = 'SelectedPlayer'
         sp.Adornee = n_plr.Character.Torso
-        sp.Color3 = Color3.new(A_X)
+        sp.Color3 = Color3.new(255,0,0)
         sp.Transparency = 0.50
         tar = n_plr
     elseif key == 'q' and tar and plr.Character then
