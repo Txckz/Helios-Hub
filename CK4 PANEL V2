@@ -257,3 +257,71 @@ game.StarterGui:SetCore("SendNotification", {
     Duration = "DURATION IN SECONDS";
     callbakc = bindableFunction;
 })
+
+local tab = gui:tab{
+    Icon = "rbxassetid://6034996695",
+    Name = "FUNCIONES II"
+}
+
+tab:button({
+    Name = "HIDE GUI KEY",
+    Callback = function()
+        tab:prompt{
+            Title = "KEY :",
+            Text = "DELETE (DEL)",
+            Buttons = {
+                Ok = function()
+                    tab:prompt{
+                        Followup = false,
+                        Title = "really?",
+                        Text = "you sure?=",
+                        Buttons = {
+                        }
+                    }
+                end,
+            }
+        }
+    end,
+})
+
+tab:button({
+    Name = "Creditos",
+    Callback = function()
+        tab:prompt{
+            Title = "OWNER",
+            Text = "AAC!",
+            Buttons = {
+                Ok = function()
+                    tab:prompt{
+                        Followup = false,
+                        Title = "really?",
+                        Text = "you sure?=",
+                        Buttons = {
+                        }
+                    }
+                end,
+            }
+        }
+    end,
+})
+
+tab:button({
+    Name = "Options",
+    Callback = function()
+        tab:prompt{
+            Title = "",
+            Text = "In coming new options!",
+            Buttons = {
+                Ok = function()
+                    tab:prompt{
+                        Followup = false,
+                        Title = "really?",
+                        Text = "you sure?=",
+                        Buttons = {
+                        }
+                    }
+                end,
+            }
+        }
+    end,
+})
